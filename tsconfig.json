@@ -3,6 +3,6 @@
         "sourceMap": true
     },
     "include":[
-        "src/scripts/*.ts"
+        "src/classes/*.ts"
     ]
 }
