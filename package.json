@@ -1,21 +1,15 @@
 {
-  "name": "gr-front-template",
+  "name": "front-template",
   "version": "1.0.0",
-  "description": "A template using most used libs and frameworks by me",
-  "main": "index.js",
+  "description": "A frontend template with webpack and typescript compiler",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test"
   },
   "author": "Gabriel Rohden",
   "license": "ISC",
-  "devDependencies": {
-    "bower": "^1.8.0",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-pug": "^3.2.0",
-    "gulp-uglify": "^2.0.1",
-    "gulp-util": "latest",
-    "gulp-watch": "^4.3.11",
-    "pug": "^2.0.0-beta11"
+  "dependencies": {
+    "ts-loader": "^2.3.2",
+    "typescript": "^2.4.2",
+    "webpack": "^3.4.1"
   }
 }
