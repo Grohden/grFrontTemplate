@@ -1,4 +1,4 @@
-class Test {
+export class Test {
     private value: Number;
 
     public getValue(): Number{

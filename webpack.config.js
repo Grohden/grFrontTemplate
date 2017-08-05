@@ -4,7 +4,10 @@ const webpack = require('webpack');
 
 const config = {
     devtool: 'inline-source-map',
-    entry: './src/classes/Test.ts',
+    entry: [
+        './src/classes/Init.ts',
+        './src/classes/Test.ts'
+    ],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
@@ -19,7 +22,7 @@ const config = {
         ]
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin(),
+        // new webpack.optimize.UglifyJsPlugin(),
         new HtmlWebpackPlugin({ template: './src/index.html' })
     ]
 }
