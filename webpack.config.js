@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -23,7 +24,14 @@ const config = {
     },
     plugins: [
         // new webpack.optimize.UglifyJsPlugin(),
-        new HtmlWebpackPlugin({ template: './src/index.html' })
+        new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new BrowserSyncPlugin({
+            host: 'localhost',
+            port: 3000,
+            server: {
+                baseDir: ['dist']
+            }
+        })
     ]
 }
 

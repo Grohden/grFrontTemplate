@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A frontend template with webpack and typescript compiler",
   "scripts": {
-    "test": "test"
+    "watch": "webpack --watch",
+    "compile": "webpack"
   },
   "author": "Gabriel Rohden",
   "license": "ISC",
@@ -12,5 +13,9 @@
     "ts-loader": "^2.3.2",
     "typescript": "^2.4.2",
     "webpack": "^3.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0"
   }
 }
